@@ -6,6 +6,10 @@ FLUSH PRIVILEGES;
 
 create table t1(c1  int,c2 varchar(50));
 insert into t1  values  (25,'ali');
-
+*********************************************************************************
 
 docker exec  -it  myphpapp-app  mysql  -u root  -p   
+
+********************************************************************************
+\\wsl$\ub2004-docker01\home\osmanatam\Docker\php-mysql-001
+******************************************************************************
