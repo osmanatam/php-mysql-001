@@ -1,0 +1,11 @@
+
+CREATE DATABASE denemedb;
+CREATE USER 'denemeusr'@'%' IDENTIFIED BY '123123';
+GRANT ALL PRIVILEGES ON denemedb.* TO 'denemeusr'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+create table t1(c1  int,c2 varchar(50));
+insert into t1  values  (25,'ali');
+
+
+docker exec  -it  myphpapp-app  mysql  -u root  -p   
